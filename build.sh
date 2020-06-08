@@ -1,5 +1,6 @@
 echo 'Start docker app ..'
 FD="$PWD"
+mkdir -p "$FD/app"
 cd dockerFiles/
 docker build -f  angular11 -t docker_ui_image .
 docker container stop docker_ui_container
