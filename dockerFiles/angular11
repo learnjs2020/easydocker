@@ -11,5 +11,7 @@ RUN apt-get install -y vim
 RUN npm install ect
 RUN npm install express
 RUN npm install body-parser
-COPY _entrypoint.sh /var/_dockerApp/_entrypoint.sh
-ENTRYPOINT cd /var/_dockerApp/ && sh _entrypoint.sh
+RUN echo '111'
+CMD mkdir -p /var/_dockerApp
+COPY _entrypoint.sh /var/_entrypoint.sh
+ENTRYPOINT cd /var && sh _entrypoint.sh
