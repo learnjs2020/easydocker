@@ -4,7 +4,7 @@ DOCKERCMD=$1
 SCRIPTDIR=$(cd `dirname $0` && pwd)
 ROOTPATH="$(dirname "$SCRIPTDIR")"
 APPPATH="$(dirname "$ROOTPATH")"/app
-
+echo $APPPATH
 exit 1
 
 sts=1
