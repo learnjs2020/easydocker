@@ -3,7 +3,9 @@
 DOCKERCMD=$1
 SCRIPTDIR=$(cd `dirname $0` && pwd)
 ROOTPATH="$(dirname "$SCRIPTDIR")"
-DATAPATH="$(dirname "$ROOTPATH")"/data
+APPPATH="$(dirname "$ROOTPATH")"/app
+
+exit 1
 
 sts=1
 until [ $sts == 0 ]
